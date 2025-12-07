@@ -1,0 +1,51 @@
+/* detail.module.css */
+
+.container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.imageContainer {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.productImage {
+  display: block;
+}
+
+.priceBox {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.priceTitle {
+  color: #007bff;
+  font-size: 2em;
+  margin: 0 0 10px 0;
+}
+
+.priceValue {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #dc3545;
+  margin: 0;
+}

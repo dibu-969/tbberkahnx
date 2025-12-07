@@ -1,0 +1,65 @@
+/* ProdukPage.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Tata letak responsif */
+    gap: 20px;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Gaya untuk elemen yang bisa diklik (div di dalam li) */
+.item > div {
+    padding: 15px;
+    cursor: pointer;
+    display: block; /* Pastikan div mengambil seluruh ruang li */
+    text-decoration: none; /* Jika Anda menggunakan tag <a> */
+    color: inherit;
+    height: 100%; /* Agar seluruh item merespons klik */
+}
+
+/* Efek hover untuk menunjukkan interaksi */
+.item:hover {
+    transform: translateY(-3px); /* Sedikit naik */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Bayangan lebih jelas */
+}
+
+.image {
+    width: 100%;
+    height: 200px; /* Tinggi gambar yang seragam */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+/* Gaya untuk detail teks produk */
+.item b {
+    font-size: 1.1em;
+    color: #0070f3; /* Warna biru untuk nama produk */
+}

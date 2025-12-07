@@ -1,0 +1,139 @@
+/* login.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Warna latar belakang halaman */
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* --- Form --- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputGroup {
+  text-align: left;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #0070f3; /* Warna fokus biru */
+  outline: none;
+}
+
+/* --- Buttons & Messages --- */
+
+.loginButton {
+  background-color: #0070f3;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.loginButton:hover {
+  background-color: #005bb5;
+}
+
+.separator {
+  margin: 20px 0;
+  color: #888;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.registerButton,
+.backButton {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.registerButton {
+  color: #0070f3;
+  border: 1px solid #0070f3;
+  background-color: white;
+}
+
+.registerButton:hover {
+  background-color: #e0f0ff;
+}
+
+.backButton {
+  color: #555;
+  background-color: #f0f2f5;
+  border: 1px solid transparent;
+}
+
+.backButton:hover {
+  background-color: #e6e8eb;
+}
+
+/* --- Status Messages --- */
+
+.successMessage {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.errorMessage {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
